@@ -1,0 +1,13 @@
+{
+  "name": "Clear Data and Tabs Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "A Chrome extension to clear all data and tabs.",
+  "author": "Christen Dom Cabatic",
+  "permissions": ["tabs","cookies","history","storage","browsingData"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_icon": "icon48.png",
+    "default_popup": "popup.html"
+  }
+}

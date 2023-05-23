@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(241, 238, 238);
+    font-family: Arial, sans-serif;
+  }
+
+  .top3 {
+    width: 25em;
+    margin: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #clear-button, #clear-timeframe, #confirm-clear,
+  #cancel-clear {
+    margin-right: 1.5em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 0.8em;
+    padding: 0.8em 1.2em;
+    cursor: pointer;
+  }
+
+  #clear-button, #confirm-clear,
+  #cancel-clear {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  #clear-button:hover, #confirm-clear:hover,
+  #cancel-clear:hover {
+    background-color: #ccc;
+  }
+
+
+  #clear-timeframe {
+    background-color: #f7f7f7;
+    color: #333;
+  }
+
+  .settings-icon {
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .collapse {
+    margin: 2em 0 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .collapse label {
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+  }
+
+  .collapse input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid dodgerblue;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    display: inline-block;
+    position: relative;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  .collapse input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5em;
+    height: 0.5em;
+    background-color: dodgerblue;
+    border-radius: 50%;
+  }
+
+  #confirmation-message {
+    text-align: center;
+  }
+
+  #message {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+  }

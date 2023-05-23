@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Clear Data and Tabs Extension</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="top3">
+      <button id="clear-button">Clear</button>
+      <select id="clear-timeframe">
+        <option value="all-time">All Time</option>
+        <option value="last-4-weeks">Last 4 Weeks</option>
+        <option value="last-7-days">Last 7 Days</option>
+        <option value="last-24-hours">Last 24 Hours</option>
+        <option value="last-hour">Last Hour</option>
+      </select>
+      <a class="settings-icon">
+        <img src="settings.png" alt="Settings Icon" style="width: 2.8em; height: 2.8em;">
+      </a>
+    </div>
+
+    <div id="confirmation-message" class="hidden">
+      <p id="confirmation-text"></p>
+      <button id="confirm-clear">OK</button>
+      <button id="cancel-clear">Cancel</button>
+    </div>
+
+    <div id="message"></div>
+
+    <form id="settings" class="hidden">
+      <div class="collapse">
+        <p><strong>Select the data you want to clear:</strong></p>
+        <label>
+          <input type="checkbox" id="clear-all" checked>
+          Select all/deselect all
+        </label>
+        <label>
+          <input type="checkbox" id="clear-cache" checked>
+          Cache
+        </label>
+        <label>
+          <input type="checkbox" id="clear-cookies" checked>
+          Cookies and other Site Data
+        </label>
+        <label>
+          <input type="checkbox" id="clear-history" checked>
+          Browsing History
+        </label>
+        <label>
+          <input type="checkbox" id="clear-download" checked>
+          Download History
+        </label>
+        <label>
+          <input type="checkbox" id="clear-password" checked>
+          Passwords and other sign-in data
+        </label>
+        <label>
+          <input type="checkbox" id="clear-autofill" checked>
+          Auto-fill Form Data
+        </label>
+        <label>
+          <input type="checkbox" id="clear-storage" checked>
+          Local Storage
+        </label>
+        <label>
+          <input type="checkbox" id="clear-tabs" checked>
+          Close all tabs
+        </label>
+        <hr>
+        <label>
+          <input type="checkbox" id="disable-confirmations" checked>
+          Disable confirmation message
+        </label>
+      </div>
+    </form>
+    <script src="popup.js"></script>
+  </body>
+</html>
